@@ -26,12 +26,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "ansicolor",
-      "rootUri": "file:///C:/Users/youssef/AppData/Local/Pub/Cache/hosted/pub.dev/ansicolor-2.0.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "app_package_maker",
       "rootUri": "file:///C:/Users/youssef/AppData/Local/Pub/Cache/hosted/pub.dev/app_package_maker-0.0.9",
       "packageUri": "lib/",
@@ -170,6 +164,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "cli_util",
+      "rootUri": "file:///C:/Users/youssef/AppData/Local/Pub/Cache/hosted/pub.dev/cli_util-0.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
       "name": "clock",
       "rootUri": "file:///C:/Users/youssef/AppData/Local/Pub/Cache/hosted/pub.dev/clock-1.1.1",
       "packageUri": "lib/",
@@ -302,6 +302,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_launcher_icons",
+      "rootUri": "file:///C:/Users/youssef/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_launcher_icons-0.13.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///C:/Users/youssef/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-2.0.1",
       "packageUri": "lib/",
@@ -393,7 +399,7 @@
     },
     {
       "name": "image",
-      "rootUri": "file:///C:/Users/youssef/AppData/Local/Pub/Cache/hosted/pub.dev/image-3.3.0",
+      "rootUri": "file:///C:/Users/youssef/AppData/Local/Pub/Cache/hosted/pub.dev/image-4.0.15",
       "packageUri": "lib/",
       "languageVersion": "2.15"
     },
@@ -480,12 +486,6 @@
       "rootUri": "file:///C:/Users/youssef/AppData/Local/Pub/Cache/hosted/pub.dev/modal_bottom_sheet-2.1.2",
       "packageUri": "lib/",
       "languageVersion": "2.17"
-    },
-    {
-      "name": "msix",
-      "rootUri": "file:///C:/Users/youssef/AppData/Local/Pub/Cache/hosted/pub.dev/msix-2.8.18",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
     },
     {
       "name": "nested",
@@ -908,7 +908,7 @@
       "languageVersion": "2.17"
     }
   ],
-  "generated": "2023-04-15T23:10:59.803251Z",
+  "generated": "2023-04-16T15:18:21.430191Z",
   "generator": "pub",
   "generatorVersion": "2.19.6"
 }
