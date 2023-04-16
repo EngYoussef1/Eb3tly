@@ -7,7 +7,7 @@ import 'package:Eb3tly/components/constants.dart';
 import 'package:Eb3tly/components/dialogs.dart';
 import 'package:Eb3tly/controllers/controllers.dart';
 import 'package:Eb3tly/models/sender_model.dart';
-import 'package:Eb3tly/services/photon_sender.dart';
+import 'package:Eb3tly/services/sender.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 import '../../components/components.dart';

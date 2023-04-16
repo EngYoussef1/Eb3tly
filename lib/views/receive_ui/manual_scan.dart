@@ -12,7 +12,7 @@ import 'package:Eb3tly/views/receive_ui/progress_page.dart';
 import 'package:unicons/unicons.dart';
 import '../../components/constants.dart';
 import '../../controllers/intents.dart';
-import '../../services/photon_receiver.dart';
+import '../../services/receiver.dart';
 
 class ReceivePage extends StatefulWidget {
   const ReceivePage({Key? key}) : super(key: key);

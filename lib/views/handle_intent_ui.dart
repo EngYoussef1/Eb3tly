@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:Eb3tly/methods/methods.dart';
-import 'package:Eb3tly/services/photon_sender.dart';
+import 'package:Eb3tly/services/sender.dart';
 import 'package:receive_sharing_intent/receive_sharing_intent.dart';
 
 class HandleIntentUI extends StatefulWidget {

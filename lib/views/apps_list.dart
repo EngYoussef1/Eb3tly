@@ -2,7 +2,7 @@ import 'package:device_apps/device_apps.dart';
 import 'package:flutter/material.dart';
 import 'package:Eb3tly/components/constants.dart';
 import 'package:Eb3tly/components/snackbar.dart';
-import 'package:Eb3tly/services/photon_sender.dart';
+import 'package:Eb3tly/services/sender.dart';
 import 'package:provider/provider.dart';
 import 'package:unicons/unicons.dart';
 

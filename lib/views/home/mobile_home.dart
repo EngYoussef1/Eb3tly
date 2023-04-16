@@ -6,7 +6,7 @@ import 'package:get_it/get_it.dart';
 import 'package:hive/hive.dart';
 import 'package:lottie/lottie.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:Eb3tly/services/photon_sender.dart';
+import 'package:Eb3tly/services/sender.dart';
 import 'package:Eb3tly/views/apps_list.dart';
 import '../../controllers/controllers.dart';
 import '../../methods/handle_share.dart';

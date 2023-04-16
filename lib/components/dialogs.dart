@@ -13,7 +13,7 @@ import 'package:url_launcher/url_launcher.dart' as ulaunch;
 
 import '../app.dart';
 import '../controllers/controllers.dart';
-import '../services/photon_sender.dart';
+import '../services/sender.dart';
 
 //all massages appear in app
 

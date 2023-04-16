@@ -7,7 +7,7 @@ import 'package:lottie/lottie.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:Eb3tly/methods/handle_share.dart';
 import '../../controllers/controllers.dart';
-import '../../services/photon_sender.dart';
+import '../../services/sender.dart';
 import '../apps_list.dart';
 
 class WidescreenHome extends StatefulWidget {

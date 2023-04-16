@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:get_it/get_it.dart';
 import 'package:Eb3tly/components/snackbar.dart';
 import 'package:Eb3tly/controllers/controllers.dart';
-import 'package:Eb3tly/services/photon_receiver.dart';
+import 'package:Eb3tly/services/receiver.dart';
 import 'package:stop_watch_timer/stop_watch_timer.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:open_file/open_file.dart';

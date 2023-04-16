@@ -5,7 +5,7 @@ import 'package:Eb3tly/models/sender_model.dart';
 import 'package:Eb3tly/views/receive_ui/progress_page.dart';
 // import 'package:mobile_scanner/mobile_scanner.dart';
 import '../../components/constants.dart';
-import '../../services/photon_receiver.dart';
+import '../../services/receiver.dart';
 import 'package:qrscan/qrscan.dart' as scan;
 
 class QrReceivePage extends StatefulWidget {
