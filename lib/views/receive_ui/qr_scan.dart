@@ -68,7 +68,7 @@ class _QrReceivePageState extends State<QrReceivePage> {
                                   child: Text('Sender denied,please retry'),
                                 )
                               : const Center(
-                                  child: Text("Waiting for sender to approve"),
+                                  child: Text("Waiting for sender to approve",style: TextStyle( color: Colors.black)),
                                 );
                     },
                   );

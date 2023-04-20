@@ -2,7 +2,6 @@ import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_it/get_it.dart';
-import 'package:lottie/lottie.dart';
 import 'package:Eb3tly/components/constants.dart';
 import 'package:Eb3tly/components/dialogs.dart';
 import 'package:Eb3tly/controllers/controllers.dart';
@@ -10,7 +9,6 @@ import 'package:Eb3tly/models/sender_model.dart';
 import 'package:Eb3tly/services/sender.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
-import '../../components/components.dart';
 
 class SharePage extends StatefulWidget {
   const SharePage({Key? key}) : super(key: key);
@@ -63,18 +61,13 @@ class _SharePageState extends State<SharePage> {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              // Lottie.asset(
-                              //   'assets/lottie/share.json',
-                              //   width: 240,
-                              // ),
+
+
                               SizedBox(
-                                width: width / 8,
-                              ),
-                              SizedBox(
-                                width: width > 720 ? 200 : 100,
-                                height: width > 720 ? 200 : 100,
+                                // width: width > 720 ? 200 : 100,
+                                // height: width > 720 ? 200 : 100,
                                 child: QrImage(
-                                  size: 180,
+                                  size: 500,
                                   foregroundColor: Colors.black,
                                   data: PhotonSender.getPhotonLink,
                                   backgroundColor: Colors.white,
@@ -83,14 +76,13 @@ class _SharePageState extends State<SharePage> {
                             ],
                           )
                         } else ...{
-                          // Lottie.asset('assets/lottie/share.json', width: 240),
+
                           SizedBox(height: 150,),
                           Container(
                             alignment: Alignment.center,
-                            width: 160,
-                            height: 160,
+
                             child: QrImage(
-                              // size: 180,
+                              size: 500,
                               foregroundColor: Colors.black,
                               data: PhotonSender.getPhotonLink,
                               backgroundColor: Colors.white,
@@ -99,14 +91,17 @@ class _SharePageState extends State<SharePage> {
                         },
                         Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            '${photonSender.hasMultipleFiles ? 'Your files are ready to be shared' : 'Your file is ready to be shared'}\nAsk receiver to tap on receive button',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: width > 720 ? 18 : 14,
-                              color: Colors.black
+                          child: Container(
+                            width: 300,
+                            child: Text(
+                              '${photonSender.hasMultipleFiles ? 'Your files are ready to be shared' : 'Your file is ready to be shared'}\nAsk receiver to tap on receive button',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: width > 720 ? 18 : 14,
+                                color: Colors.black
+                              ),
+                              textAlign: TextAlign.center,
                             ),
-                            textAlign: TextAlign.center,
                           ),
                         ),
                         const SizedBox(
@@ -119,27 +114,27 @@ class _SharePageState extends State<SharePage> {
                                 .receiverMap
                                 .isEmpty
                             ? Card(
-                                color: mode.isDark
-                                    ? const Color.fromARGB(255, 29, 32, 34)
-                                    : const Color.fromARGB(255, 241, 241, 241),
-                                clipBehavior: Clip.antiAlias,
-                                elevation: 8,
-                                // color: Platform.isWindows ? Colors.grey.shade300 : null,
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(24)),
+                                // color: mode.isDark
+                                //     ? const Color.fromARGB(255, 29, 32, 34)
+                                //     : const Color.fromARGB(255, 241, 241, 241),
+                                // clipBehavior: Clip.antiAlias,
+                                // elevation: 8,
+                                // // color: Platform.isWindows ? Colors.grey.shade300 : null,
+                                // shape: RoundedRectangleBorder(
+                                //     borderRadius: BorderRadius.circular(24)),
                                 child: SizedBox(
-                                  height: width > 720 ? 200 : 128,
-                                  width: width > 720 ? width / 2 : width / 1.25,
+                                  // height: width > 720 ? 200 : 128,
+                                  // width: width > 720 ? width / 2 : width / 1.25,
                                   child: Center(
-                                    child: Wrap(
-                                      direction: Axis.vertical,
-                                      children: infoList(
-                                          senderModel,
-                                          width,
-                                          height,
-                                          true,
-                                          mode.isDark ? "dark" : "bright"),
-                                    ),
+                                    // child: Wrap(
+                                    //   direction: Axis.vertical,
+                                    //   children: infoList(
+                                    //       senderModel,
+                                    //       width,
+                                    //       height,
+                                    //       true,
+                                    //       mode.isDark ? "dark" : "bright"),
+                                    // ),
                                   ),
                                 ),
                               )
@@ -200,7 +195,9 @@ class _SharePageState extends State<SharePage> {
                                                     )
                                                   : Center(
                                                       child: Text(
-                                                          "Sending '${data[keys[item]]['currentFileName']}' (${data[keys[item]]['currentFileNumber']} out of ${data[keys[item]]['filesCount']} files)"),
+                                                          "Sending '${data[keys[item]]['currentFileName']}' (${data[keys[item]]['currentFileNumber']} out of ${data[keys[item]]['filesCount']} files)",
+
+                                                      ),
                                                     )
                                             ],
                                           ),

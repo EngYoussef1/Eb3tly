@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get_it/get_it.dart';
 import 'package:lottie/lottie.dart';
-import 'package:Eb3tly/components/components.dart';
 import 'package:Eb3tly/models/sender_model.dart';
 import 'package:Eb3tly/services/file_services.dart';
 import 'package:Eb3tly/views/receive_ui/progress_page.dart';
@@ -100,6 +99,7 @@ class _ReceivePageState extends State<ReceivePage> {
                                                     720
                                                 ? 20
                                                 : 16,
+                                          color: Colors.black
                                       ),
                                       textAlign: TextAlign.center,
                                     ),
@@ -126,6 +126,7 @@ class _ReceivePageState extends State<ReceivePage> {
                                                   720
                                               ? 20
                                               : 16,
+                                        color: Colors.black
                                     ),
                                     textAlign: TextAlign.center,
                                   ),
@@ -148,6 +149,7 @@ class _ReceivePageState extends State<ReceivePage> {
                                                     720
                                                 ? 18
                                                 : 16,
+                                          color: Colors.black
                                       ),
                                     ),
                                   ),
@@ -156,7 +158,7 @@ class _ReceivePageState extends State<ReceivePage> {
                                   child: SizedBox(
                                       child: Text(
                                     '(Files will be saved at $dir)',
-                                    textAlign: TextAlign.center,
+                                    textAlign: TextAlign.center,style: TextStyle( color: Colors.black)
                                   )),
                                 )
                               } else ...{
@@ -166,7 +168,7 @@ class _ReceivePageState extends State<ReceivePage> {
                                 const Center(
                                   child: Focus(
                                     child: Text(
-                                        "Please select the 'sender' from the list"),
+                                        "Please select the 'sender' from the list",style: TextStyle( color: Colors.black)),
                                   ),
                                 ),
                                 ListView.builder(
@@ -228,7 +230,7 @@ class _ReceivePageState extends State<ReceivePage> {
                                                 ScaffoldMessenger.of(context)
                                                     .showSnackBar(const SnackBar(
                                                         content: Text(
-                                                            'Access denied by the sender')));
+                                                            'Access denied by the sender',style: TextStyle( color: Colors.black))));
                                               }
                                             },
                                             child: Center(

@@ -56,7 +56,7 @@ void main() async {
             blendOnLevel: 30,
           ),
           background: Colors.white,
-          visualDensity: FlexColorScheme.comfortablePlatformDensity,
+          // visualDensity: FlexColorScheme.comfortablePlatformDensity,
           useMaterial3: true,
           fontFamily: 'questrial'),
       dark: FlexThemeData.dark(
