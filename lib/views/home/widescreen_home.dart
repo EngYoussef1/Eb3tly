@@ -69,7 +69,7 @@ class _WidescreenHomeState extends State<WidescreenHome> {
                                             isLoading = true;
                                           });
 
-                                          await PhotonSender.handleSharing();
+                                          await Eb3tlySender.handleSharing();
 
                                           setState(() {
                                             isLoading = false;
@@ -182,7 +182,7 @@ class _WidescreenHomeState extends State<WidescreenHome> {
                           setState(() {
                             isLoading = true;
                           });
-                          await PhotonSender.handleSharing();
+                          await Eb3tlySender.handleSharing();
                           setState(() {
                             isLoading = false;
                           });

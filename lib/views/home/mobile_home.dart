@@ -19,7 +19,7 @@ class MobileHome extends StatefulWidget {
 }
 
 class _MobileHomeState extends State<MobileHome> {
-  PhotonSender photonSePhotonSender = PhotonSender();
+  Eb3tlySender photonSePhotonSender = Eb3tlySender();
   bool isLoading = false;
   Box box = Hive.box('appData');
   @override
@@ -71,7 +71,7 @@ class _MobileHomeState extends State<MobileHome> {
                                           isLoading = true;
                                         });
 
-                                        await PhotonSender.handleSharing();
+                                        await Eb3tlySender.handleSharing();
 
                                         setState(() {
                                           isLoading = false;
@@ -183,7 +183,7 @@ class _MobileHomeState extends State<MobileHome> {
                             isLoading = true;
                           });
 
-                          await PhotonSender.handleSharing();
+                          await Eb3tlySender.handleSharing();
                           setState(() {
                             isLoading = false;
                           });

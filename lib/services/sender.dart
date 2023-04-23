@@ -14,7 +14,7 @@ import '../components/snackbar.dart';
 import '../main.dart';
 import 'file_services.dart';
 
-class PhotonSender {
+class Eb3tlySender {
   static late HttpServer _server;
   static String _address = '';
   static late List<String?> _fileList;
@@ -50,7 +50,7 @@ class PhotonSender {
       // cause in case of android bottom sheet opens up when share is tapped
       Navigator.pop(nav.currentContext!);
     }
-    Map<String, dynamic> shareRespMap = await PhotonSender.share(
+    Map<String, dynamic> shareRespMap = await Eb3tlySender.share(
         nav.currentContext,
         externalIntent: externalIntent,
         appList: appList);

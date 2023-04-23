@@ -18,8 +18,8 @@ class SharePage extends StatefulWidget {
 }
 
 class _SharePageState extends State<SharePage> {
-  SenderModel senderModel = PhotonSender.getServerInfo();
-  PhotonSender photonSender = PhotonSender();
+  SenderModel senderModel = Eb3tlySender.getServerInfo();
+  Eb3tlySender photonSender = Eb3tlySender();
   late double width;
   late double height;
   bool willPop = false;
@@ -69,7 +69,7 @@ class _SharePageState extends State<SharePage> {
                                 child: QrImage(
                                   size: 500,
                                   foregroundColor: Colors.black,
-                                  data: PhotonSender.getPhotonLink,
+                                  data: Eb3tlySender.getPhotonLink,
                                   backgroundColor: Colors.white,
                                 ),
                               )
@@ -84,7 +84,7 @@ class _SharePageState extends State<SharePage> {
                             child: QrImage(
                               size: 500,
                               foregroundColor: Colors.black,
-                              data: PhotonSender.getPhotonLink,
+                              data: Eb3tlySender.getPhotonLink,
                               backgroundColor: Colors.white,
                             ),
                           )

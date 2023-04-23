@@ -140,7 +140,7 @@ sharePageAlertDialog(BuildContext context) async {
               child: const Text('Stay')),
           ElevatedButton(
             onPressed: () async {
-              await PhotonSender.closeServer(context);
+              await Eb3tlySender.closeServer(context);
               // ignore: use_build_context_synchronously
               GetIt.I.get<ReceiverDataController>().receiverMap.clear();
               Navigator.of(context).pushAndRemoveUntil(
@@ -177,7 +177,7 @@ sharePageWillPopDialog(context) async {
               child: const Text('Stay')),
           ElevatedButton(
             onPressed: () async {
-              await PhotonSender.closeServer(context);
+              await Eb3tlySender.closeServer(context);
               willPop = true;
               // ignore: use_build_context_synchronously
               Navigator.of(context).pop();
